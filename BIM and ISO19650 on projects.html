@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OSIT - BIM projects</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="OSIT.css" rel="stylesheet" type="text/css">
+	   <style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    figure {
+        margin: 20px 0;
+        max-height: 0; /* Start collapsed */
+        overflow: hidden;
+        transition: max-height 0.5s ease, opacity 0.5s ease;
+        opacity: 0;
+        border: 1px solid #ccc;
+        padding: 0;
+    }
+
+    figure img {
+        width: 100%;
+        display: block;
+    }
+
+    figure figcaption {
+        padding: 10px;
+        background: #f0f0f0;
+    }
+
+    /* Expanded state */
+    figure.show {
+        max-height: 500px; /* Adjust based on content */
+        opacity: 1;
+    }
+		      	   .button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+  </head>
+  <body>
+    <span class="col-12"><a href="https://www.builddigitalproject.ie/"><img src="images/BuildDigitalGovlogo.png" width="391" height="65" alt="" class="img-thumbnail"></a></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="OSIT.html">OSIT</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"> <a class="nav-link" href="OSIT.html">Home <span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="About OSIT.html">About</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="BIM and ISO19650 knowledge.html">BIM knowledge</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="BIM Certification.html">BIM Certification</a> </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> BIM Training </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Training.html">Main Page</a>
+			<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="Training - Leadership.html">Leadership</a> <a class="dropdown-item" href="Training - Client.html">Client</a>
+				<a class="dropdown-item" href="Training - PM.html">Project Management</a> <a class="dropdown-item" href="Training - PBC.html">Project BIM Coordinator</a> <a class="dropdown-item" href="Training - BA.html">BIM Author</a></li>
+				 <li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> BIM on Projects </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				
+              <a class="dropdown-item" href="BIM and ISO19650 on projects.html">Main Page</a>
+			  <div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="BIM and ISO19650 on projects - Client.html">Appointing Party - Client</a> 
+				<a class="dropdown-item" href="BIM and ISO19650 on projects - Design Team.html">(Lead) Appointed Party - Design</a> <a class="dropdown-item" href="BIM and ISO19650 on projects - Construction Team.html">(Lead) Appointed Party - Construction</a> <a class="dropdown-item" href="BIM and ISO19650 on projects - Asset Team.html">Asset FM Team</a>
+			
+              
+            </div>
+         	 <li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> BIM in Organisations </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+             <a class="dropdown-item" href="Organisation Implementation BIM and ISO19650.html">Main Page</a> 
+			   <div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="Organisation Implementation BIM and ISO91650 - Appointing Party.html">Appointing Party</a> 	<a class="dropdown-item" href="Organisation Implementation BIM and ISO91650 - Lead Appointed Party.html">Lead Appointed Party</a> <a class="dropdown-item" href="Organisation Implementation BIM and ISO91650 -  Appointed Party.html">Appointed Party</a> 
+			  
+				
+            	 <li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> GAP analysis </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="GAP Analysis Output.html">Main Page</a> 
+			   <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="GAP Analysis Output PPC.html">People Process and Culture</a> <a class="dropdown-item" href="GAP Analysis Output Tech.html">Technology</a>
+				<a class="dropdown-item" href="GAP Analysis Output PG.html">Policy and Governance</a> 
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+         
+        
+          
+        </form>
+      </div>
+    </nav>
+    <header>
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="text-center">Organisation Strategy Implementation Toolkit</h1>
+              <h2 class="text-center">BIM and ISO 19650 on Projects</h2>
+           
+              
+<p></p>
+              
+                
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mb-4 mt-2 text-center">
+			  <h2 class="text-justify">According to ISO19650-2, a project that requires alignment with the standard need to consider a number of steps and actions that are stakeholder sensitive. There are three main stakeholders listed in the ISO19650 standard - Appointing Party (Client), Lead Appointed Party (Tier 1 Consultant or Contractor) and Appointed Party (Sub-contractor).  </h2>
+			  
+			  
+           
+           <p> <h2 class="text-justify"> ISO19650-2 is related to Delivery Phase of Assets, it contains a number of phases for any BIM aligned project. Each of phases is explained in ISO19650 guide documents including stakeholders, their responsibilities and resources needed together with required templates.</h2></p>
+           
+            <p>
+		<h2 class="text-justify"> ISO19650-3 is related to Operational phase of the asset. It is quite similar to ISO19650 -2 regarding terminology and activities. Please see this guide for more information related to this phase. Implementation of Projects is related to the role of stakeholders on a project. Below are options to gain further information of this process. </h2></p>
+		
+            <h2>Resources:</h2>  
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 text-center col-lg-6">
+			  <a href="https://www.builddigitalproject.ie/implementation-guide"> <button class="button">  Information Management / BIM Implementation Guide </button></a><h3></h3></div>  
+            <div class="col-md-6 col-sm-12 text-center col-lg-6">
+			  <a href="https://www.builddigitalproject.ie/guides"> <button class="button">  ISO19650-Guides </button></a><h3></h3></div>  
+			<p><h2 class="text-center"> Please select your role on a BIM ISO 19650 Project</h2>
+			</p></div>
+           
+      
+			
+			
+        </div>
+      </div>
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 text-center col-lg-3">
+            <a href="BIM and ISO19650 on projects - Asset Team.html"><img src="images/asset.png" alt="" width="140" height="146" class="rounded-circle"></a>
+<h3>Asset Team</h3>
+            <p>If you wish to learn more about ISO19650 and BIM.</p>
+          </div>
+          <div class="col-md-6 col-sm-12 text-center col-lg-3">
+            <a href="BIM and ISO19650 on projects - Client.html"><img src="images/client.jpg" alt="" width="140" height="146" class="rounded-circle"></a>
+<h3>Client</h3>
+            <p>To learn more about BIM and ISO91650 implementation in an Organisation.</p>
+          </div>
+          <div class="col-md-6 col-sm-12 text-center col-lg-3">
+            <a href="BIM and ISO19650 on projects - Design Team.html"><img src="images/design.jpg" alt="" width="140" height="146" class="rounded-circle"></a>
+<h3>Design Team</h3>
+            <p>To learn more about BIM and ISO19650 on projects.</p>
+          </div>
+          <div class="col-md-6 col-sm-12 text-center col-lg-3">
+            <a href="BIM and ISO19650 on projects - Construction Team.html"><img src="images/construction.jpg" alt="" width="140" height="146" align="center" class="rounded-circle"></a>
+<h3 class="text-center">Construction Team</h3>
+          <p>To learn more about BIM and ISO19650 on projects.</p></div>
+          
+          
+          
+        </div>
+        
+       
+         
+        </div>
+     
+     
+          
+        
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-2 text-center">
+          <h2><p></p>
+				<button id="toggleBtn">OSIT Navigation Map</button>
+
+<figure id="myFigure">
+    <img src="images/Slide_Page_15.png" alt="" width="1100" height="" class="img-fluid"  text-align:"center">
+    <figcaption text-align:"center">This is a sample figure caption.</figcaption>
+</figure>
+
+<script>
+    const btn = document.getElementById('toggleBtn');
+    const figure = document.getElementById('myFigure');
+
+    btn.addEventListener('click', () => {
+        figure.classList.toggle('show');
+        btn.textContent = figure.classList.contains('show') ? 'Close OSIT Map' : 'OSIT Navigation Map';
+    });
+</script></h2>
+          </div>
+        </div>
+        
+
+            
+          </div>
+          
+       
+    
+     
+    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8 mx-auto">
+          <div class="jumbotron">
+            <div class="row text-center">
+              <div class="text-center col-12">
+                <h2>Feedback on the Toolkit</h2>
+              </div>
+              <div class="text-center col-12">
+                <!-- CONTACT FORM https://github.com/jonmbake/bootstrap3-contact-form -->
+                <form id="feedbackForm" class="text-center">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" aria-describedby="nameHelp">
+                    <span id="nameHelp" class="form-text text-muted" style="display: none;">Please enter your name.</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" aria-describedby="emailHelp">
+                    <span id="emailHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Message" aria-describedby="messageHelp"></textarea>
+                    <span id="messageHelp" class="form-text text-muted" style="display: none;">Please enter a message.</span>
+                  </div>
+                  <button type="submit" id="feedbackSubmit" class="button"> Send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Build Digital Project&nbsp;</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script> 
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
