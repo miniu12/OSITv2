@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OSIT - GAP PPC</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="OSIT.css" rel="stylesheet" type="text/css">
+	  <style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    figure {
+        margin: 20px 0;
+        max-height: 0; /* Start collapsed */
+        overflow: hidden;
+        transition: max-height 0.5s ease, opacity 0.5s ease;
+        opacity: 0;
+        border: 1px solid #ccc;
+        padding: 0;
+    }
+
+    figure img {
+        width: 100%;
+        display: block;
+    }
+
+    figure figcaption {
+        padding: 10px;
+        background: #f0f0f0;
+    }
+
+    /* Expanded state */
+    figure.show {
+        max-height: 500px; /* Adjust based on content */
+        opacity: 1;
+    }
+		     #BDPSection {
+background-color: #9D1662;
+color: white;
+padding: 20px;
+}
+</style>
+  </head>
+  <body>
+    <span class="col-12"><a href="https://www.builddigitalproject.ie/"><img src="images/BuildDigitalGovlogo.png" width="391" height="65" alt="" class="img-thumbnail"></a></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="OSIT.html">OSIT</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"> <a class="nav-link" href="OSIT.html">Home <span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="About OSIT.html">About</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="BIM and ISO19650 knowledge.html">BIM knowledge</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="BIM Certification.html">BIM Certification</a> </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> BIM Training </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Training.html">Main Page</a>
+			<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="Training - Leadership.html">Leadership</a> <a class="dropdown-item" href="Training - Client.html">Client</a>
+				<a class="dropdown-item" href="Training - PM.html">Project Management</a> <a class="dropdown-item" href="Training - PBC.html">Project BIM Coordinator</a> <a class="dropdown-item" href="Training - BA.html">BIM Author</a></li>
+				 <li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> BIM on Projects </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				
+              <a class="dropdown-item" href="BIM and ISO19650 on projects.html">Main Page</a>
+			  <div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="BIM and ISO19650 on projects - Client.html">Appointing Party - Client</a> 
+				<a class="dropdown-item" href="BIM and ISO19650 on projects - Design Team.html">(Lead) Appointed Party - Design</a> <a class="dropdown-item" href="BIM and ISO19650 on projects - Construction Team.html">(Lead) Appointed Party - Construction</a> <a class="dropdown-item" href="BIM and ISO19650 on projects - Asset Team.html">Asset FM Team</a>
+			
+              
+            </div>
+         	 <li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> BIM in Organisations </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+             <a class="dropdown-item" href="Organisation Implementation BIM and ISO19650.html">Main Page</a> 
+			   <div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="Organisation Implementation BIM and ISO91650 - Appointing Party.html">Appointing Party</a> 	<a class="dropdown-item" href="Organisation Implementation BIM and ISO91650 - Lead Appointed Party.html">Lead Appointed Party</a> <a class="dropdown-item" href="Organisation Implementation BIM and ISO91650 -  Appointed Party.html">Appointed Party</a> 
+			  
+				
+            	 <li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> GAP analysis </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="GAP Analysis Output.html">Main Page</a> 
+			   <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="GAP Analysis Output PPC.html">People Process and Culture</a> <a class="dropdown-item" href="GAP Analysis Output Tech.html">Technology</a>
+				<a class="dropdown-item" href="GAP Analysis Output PG.html">Policy and Governance</a> 
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+         
+        
+          
+        </form>
+      </div>
+    </nav>
+    <header>
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="text-center">Organisation Strategy Implementation Toolkit</h1>
+              <h2 class="text-center">GAP Analysis Toolkit Output -&nbsp;People, Process and Culture</h2>
+           
+              
+<p></p>
+              
+                
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mb-4 mt-2 text-center">
+		    <p class="text-justify">The First Dimension of the toolkit addresses number of areas that potentially would need completed in order to achieve digital maturity such as:</p>
+		    
+          
+   
+           
+      
+			
+			
+        </div>
+      </div>
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 text-center col-lg-4">
+            <img src="images/icons8-learning.gif" alt="" width="70" height="70" class="rounded-circle">
+            <p class="text-center"><strong>BIM Training and Education</strong></p>
+<p class="text-left">1. Certification and Training Completion.</p>
+				  <p class="text-left">2. BIM Integration Capability.</p>
+				  <p class="text-left">3. Professional Development Support.</p>
+				  <p class="text-left">4. BIM Workshop Participation.</p>
+				  <p class="text-left">5. Internal BIM Support.</p>
+		    <p class="text-left">6. BIM Skills Initiatives.</p>
+			  <p> Resources: <a href="Training.html">Training</a>
+				  <a href="BIM and ISO19650 knowledge.html">|  BIM Knowledge</a></p>
+          </div>
+          <div class="col-md-6 col-sm-12 text-center col-lg-4">
+            <img src="images/icons8-awareness-100.png" alt="" width="70" height="70" class="rounded-circle">
+            <p class="text-center"><strong>BIM Awareness</strong></p>
+<P> </P>
+            <p class="text-left">1. Understanding BIM Fundamentals</p>
+				<p class="text-left">2. Awareness of BIM Benefits.</p>
+</p>
+			<p class="text-left"> Resources: <a href="BIM and ISO19650 knowledge.html">|  BIM Knowledge</a></p>
+          </div>
+          <div class="col-md-6 col-sm-12 text-center col-lg-4">
+            <img src="images/icons8-ability-100.png" alt="" width="70" height="70" class="rounded-circle">
+            <p class="text-center"><strong>BIM Competency</strong></p>
+<p></p>
+			  <p></p>
+			  <p></p>
+            <p class="text-left">1. Proficiency in BIM Tools.</p>
+			  <p class="text-left">2. BIM Data Management Skills.</p>
+				<p class="text-left">3. Collaborative BIM Work.</p>
+				<p class="text-left">4. BIM Best Practice Usage.</p>
+				<p class="text-left">5. Ongoing BIM Learning.</p>
+			  <p> Resources: <a href="Training.html">Training</a>
+				  <a href="BIM and ISO19650 knowledge.html">|  BIM Knowledge</a></p>
+          </div>
+          <div class="col-md-6 col-sm-12 text-center col-lg-4">
+            <img src="images/icons8-change-100.png" alt="" width="70" height="70" class="rounded-circle">
+            <p class="text-center"><strong>BIM Change Management and Adaptability</strong></p>
+<p class="text-left">1. BIM Change Readiness.</p>
+				  <p class="text-left">2. Adaptability to BIM Workflows.</p>
+				  
+			  <p> Resources: <a href="Training.html">Training</a>
+		    </p>
+          </div>
+          <div class="col-md-6 col-sm-12 text-center col-lg-4">
+            <img src="images/leadership.png" alt="" width="70" height="70" class="rounded-circle">
+            <p class="text-center"><strong>BIM Leadership and Support</strong></p>
+<p class="text-left">1. Leadership Commitment to BIM.</p>
+				  <p class="text-left">2. Investment in BIM Resources.</p>
+<p class="text-left">3. Empowerment of BIM Champions.</p>
+				  <p>4. Recognition for BIM Advocacy.</p>
+				  </p>
+			   <p> Resources: <a href="Training.html">Training</a>
+				  <a href="BIM and ISO19650 knowledge.html">|  BIM Knowledge</a></p>
+        </div>
+         <div class="col-md-6 col-sm-12 text-center col-lg-4">
+           <img src="images/icons8-collaboration-80.png" alt="" width="70" height="70" class="rounded-circle">
+           <p class="text-center"><strong>Collaborative Culture</strong></p>
+<p class="text-left">1. Cross-Disciplinary BIM Collaboration.</p>
+				  <p class="text-left">2. Collective BIM Decision-Making.</p>
+<p class="text-left">3. BIM Knowledge Sharing.</p>
+				  
+				  </p>
+		  <p> Resources: <a href="Training.html">Training</a></p>
+				  
+          
+          
+          
+          
+        </div>
+        
+       
+         
+        </div>
+     
+     
+          
+        
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-2 text-center">
+            <h2><p></p>
+				<button id="toggleBtn">OSIT Navigation Map</button>
+
+<figure id="myFigure">
+    <img src="images/Slide_Page_11.png" alt="" width="1100" height="" class="img-fluid"  text-align:"center">
+    <figcaption text-align:"center">This is a sample figure caption.</figcaption>
+</figure>
+
+<script>
+    const btn = document.getElementById('toggleBtn');
+    const figure = document.getElementById('myFigure');
+
+    btn.addEventListener('click', () => {
+        figure.classList.toggle('show');
+        btn.textContent = figure.classList.contains('show') ? 'Close OSIT Map' : 'OSIT Navigation Map';
+    });
+</script></h2>
+          </div>
+        </div>
+   
+            
+          </div>
+          
+         
+          </div>
+        </div>
+     
+    </section>
+    <section id="BDPSection"><p class="preFlex flexIn" style="white-space: pre-wrap; transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); transition-duration: 0.65s; font-family: arial; font-size: 9px; color: #FFFFFF;">Copyright © Build Digital Project 2025. All rights reserved. No part of this document may be reprinted or reproduced or utilised in any form or by any electronic, mechanical, or other means, now known or hereafter invented, including photocopying and recording, or in any information storage or retrieval system, without permission in writing from Build Digital. Trademark notice: Product or corporate names may be trademarks or registered trademarks, and are used only for identification and explanation without intent to infringe. Disclaimer: These materials are for general information only. Although high standards have been used in its preparation, Build Digital accepts no legal responsibility for any loss or damage suffered as a result of any inadvertent inaccuracy. These materials should not be relied upon without seeking independent, professional advice. </p><p class="preFlex" style="white-space: pre-wrap; transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); transition-duration: 0.65s; color: #FFFFFF; font-size: 9px;">March 2025</p>
+</section>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script> 
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
